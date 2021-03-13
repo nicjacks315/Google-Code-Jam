@@ -24,9 +24,9 @@ For each test case, output one line containing Case #x: y, where x is the test c
 ### Limits
 
 Time limit: 20 seconds per test set.
-Memory limit: 1GB.
-1 ≤ T ≤ 100.
-1 ≤ length of S ≤ 100.
+- Memory limit: 1GB.
+- 1 ≤ T ≤ 100.
+- 1 ≤ length of S ≤ 100.
 
 ### Test set 1 (Visible Verdict)
 Each character in S is either 0 or 1.
