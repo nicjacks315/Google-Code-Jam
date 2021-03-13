@@ -21,13 +21,11 @@ Memory limit: 1GB.
 1 ≤ T ≤ 100.
 2 ≤ N ≤ 100.
 1 ≤ Mi,j ≤ N, for all i, j.
-Sample
 
-Input
-  	
-Output
- 
+# Sample
 
+## Input
+  
 3
 4
 1 2 3 4
@@ -44,9 +42,7 @@ Output
 1 3 2
 1 2 3
 
-  
-
-	
+## Output	
 
 Case #1: 4 0 0
 Case #2: 9 4 4
