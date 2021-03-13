@@ -23,7 +23,7 @@ The first line of the input gives the number of test cases, T. T lines follow. E
 For each test case, output one line containing Case #x: y, where x is the test case number (starting from 1) and y is the string S' defined above.
 ### Limits
 
-Time limit: 20 seconds per test set.
+- Time limit: 20 seconds per test set.
 - Memory limit: 1GB.
 - 1 ≤ T ≤ 100.
 - 1 ≤ length of S ≤ 100.
