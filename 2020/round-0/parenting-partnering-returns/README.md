@@ -1,3 +1,5 @@
+# Parenting Partnering Returns (7pts, 12pts)
+
 # Problem
 
 Cameron and Jamie's kid is almost 3 years old! However, even though the child is more independent now, scheduling kid activities and domestic necessities is still a challenge for the couple.
