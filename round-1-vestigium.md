@@ -25,7 +25,7 @@ Memory limit: 1GB.
 # Sample
 
 ## Input
-  
+```
 3
 4
 1 2 3 4
@@ -41,13 +41,14 @@ Memory limit: 1GB.
 2 1 3
 1 3 2
 1 2 3
+```
 
 ## Output	
-
+```
 Case #1: 4 0 0
 Case #2: 9 4 4
 Case #3: 8 0 2
-
+```
   
 
 In Sample Case #1, the input is a natural Latin square, which means no row or column has repeated elements. All four values in the main diagonal are 1, and so the trace (their sum) is 4.
