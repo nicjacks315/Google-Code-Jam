@@ -1,7 +1,5 @@
 #include <iostream>
 
-using namespace std;
-
 #define ms 64
 
 using namespace std;
