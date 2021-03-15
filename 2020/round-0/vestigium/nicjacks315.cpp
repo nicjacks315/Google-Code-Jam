@@ -27,9 +27,8 @@ void cv(int m[ms][ms], int v[], int c, int s) {
     }
 }
 
-void solve(int n, int s) {
+void solve(int n, int s, int m[ms][ms]) {
     
-    int m[ms][ms];
     int v[s];
     int k=0, r=0, c=0;
     
@@ -63,7 +62,7 @@ int main() {
     cin.tie(NULL);
     cout.tie(NULL);
     
-    int n,s;
+    int n,s, m[ms][ms];
     cin>>n;
     for(int i=0; i<n; i++) {
         cin>>s;
