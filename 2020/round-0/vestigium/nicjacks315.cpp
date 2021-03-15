@@ -42,13 +42,13 @@ void solve(int n, int s) {
     }
     
     //repeat c
-    for( int cc = 0; cc < s; cc++ ) {
+    for(int cc = 0; cc < s; cc++) {
         cv(m,v,cc,s);
         c+=dup(v,s)?1:0;
     }
     
     //repeat r
-    for( int rr = 0; rr < s; rr++ ) {
+    for(int rr = 0; rr < s; rr++) {
         rv(m,v,rr,s);
         r+=dup(v,s)?1:0;
     }
