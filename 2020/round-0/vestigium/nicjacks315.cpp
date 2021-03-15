@@ -4,6 +4,7 @@
 
 using namespace std;
 
+//vector has dups
 bool dup(int v[], int s) {
     for(int i=0; i<s; i++) {
         for(int j=0; j<s; j++) {
@@ -15,12 +16,14 @@ bool dup(int v[], int s) {
     return false;
 }
 
+//get row
 void rv(int m[ms][ms], int v[], int r, int s) {
     for(int c=0; c<s; c++) {
         v[c]=m[r][c];
     }
 }
 
+//get col
 void cv(int m[ms][ms], int v[], int c, int s) {
     for(int r=0; r<s; r++) {
         v[r]=m[r][c];
