@@ -3,13 +3,11 @@
 #define ms 64
 
 using namespace std;
-typedef unsigned int ui;
 
-
-bool dup( int v[], int s ) {
-    for( unsigned int i=0; i<s; i++ ) {
-        for( unsigned int j=0; j<s; j++ ) {
-            if( j!= i && v[i]==v[j] ) {
+bool dup(int v[], int s) {
+    for(int i=0; i<s; i++) {
+        for(int j=0; j<s; j++) {
+            if(j!= i && v[i]==v[j]) {
                 return true;
             }
         }
@@ -17,61 +15,58 @@ bool dup( int v[], int s ) {
     return false;
 }
 
-void rv( int m[ms][ms], int v[], int r, int s ) {
-    for( ui c=0; c<s; c++ ) {
-        v[c] = m[r][c];
+void rv(int m[ms][ms], int v[], int r, int s) {
+    for(int c=0; c<s; c++) {
+        v[c]=m[r][c];
     }
 }
 
-void cv( int m[ms][ms], int v[], int c, int s ) {
-    for( ui r=0; r<s; r++ ) {
-        v[r] = m[r][c];
+void cv(int m[ms][ms], int v[], int c, int s) {
+    for(int r=0; r<s; r++) {
+        v[r]=m[r][c];
     }
 }
 
-void solve( int n, int s ) {
+void solve(int n, int s) {
     
     int m[ms][ms];
     int v[s];
-    int k = 0, r = 0, c = 0;
+    int k=0, r=0, c=0;
     
     //build matrix, find trace
-    for( unsigned int cc = 0; cc < s; cc++ ) {
-        for( unsigned int rr = 0; rr < s; rr++ ) {
-            cin >> m[rr][cc];
+    for(int cc = 0; cc < s; cc++) {
+        for(int rr = 0; rr < s; rr++) {
+            cin>>m[rr][cc];
             k+=(rr==cc)?m[rr][cc]:0;
         }
     }
     
     //repeat c
-    for( unsigned int cc = 0; cc < s; cc++ ) {
+    for( int cc = 0; cc < s; cc++ ) {
         cv(m,v,cc,s);
         c+=dup(v,s)?1:0;
     }
     
     //repeat r
-    for( unsigned int rr = 0; rr < s; rr++ ) {
+    for( int rr = 0; rr < s; rr++ ) {
         rv(m,v,rr,s);
         r+=dup(v,s)?1:0;
     }
     
-    cout<<"Case #"<<n+1<<": "<<k<<" "<<r<<" "<<c<<endl;
-    
+    cout<<"Case #"<<n+1<<": "<<k<<" "<<r<<" "<<c<<"\n";
 }
 
 
 
 int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    
     int n,s;
     cin>>n;
-    for(ui i=0; i<n; i++) {
+    for(int i=0; i<n; i++) {
         cin>>s;
         solve(i,s);
     }
 }
-
-//ex. output Case #x: k r c
-//x is case number
-//k trace of square matrix (sum of diagonal elements from (0,0) to (n,n))
-//r number of rows with repeat elements
-//c number of colums with repeat elements
