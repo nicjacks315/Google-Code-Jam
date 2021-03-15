@@ -62,10 +62,10 @@ int main() {
     cin.tie(NULL);
     cout.tie(NULL);
     
-    int n,s, m[ms][ms];
+    int n,s,m[ms][ms];
     cin>>n;
     for(int i=0; i<n; i++) {
         cin>>s;
-        solve(i,s);
+        solve(i,s,m);
     }
 }
