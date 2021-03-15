@@ -1,3 +1,13 @@
+//Notes: lots of changes can be made here
+//  1) dup function can either return an int or we can remove the ternary conditional operator to avoid unnecessary +=0 operations
+//  2) ternary conditional operator could also be removed in trace summation to save a few operations
+//  3) v[s] could be pulled to higher scope to avoid unnecessary deallocations, but this comes at the cost of memory
+//  4) function declarations could be organized a little better
+//  5) rv, cv, and dup could probably be rolled into two functions to avoid 2 extra loops
+//  6) the buffer matrix could be allocated to the heap, less memory and more robust program at the cost of speed
+//  7) there exists better algorithms for finding dups
+//  8) 
+
 #include <iostream>
 
 #define ms 64
