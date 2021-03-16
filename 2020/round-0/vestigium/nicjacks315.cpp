@@ -81,4 +81,6 @@ int main() {
         cin>>s;
         solve(i,s,m);
     }
+    
+    return 0;
 }
