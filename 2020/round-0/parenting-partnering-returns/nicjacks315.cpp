@@ -6,6 +6,7 @@
 //  5) Without looking at the analysis, I arrived at pre-sorting and greedy assignment as the optimal solution
 //  6) Seems like testing all possible combinations or treating this as a graph problem is way over-engineering for this problem
 //  7) Ran into some trouble printing the char array with null-terminator chars. For some reason this always takes me a minute to iron out
+//  8) Almost blew with the pre-emptive sorting - results expect activites to be assigned based in the order of their input, not chronologically!
 
 
 #include <iostream>
