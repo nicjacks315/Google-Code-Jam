@@ -5,6 +5,8 @@
 //  4) Taking some notes from other contestants - defining some of the std::vector methods as short hand symbols makes typing go alot faster
 //  5) Without looking at the analysis, I arrived at pre-sorting and greedy assignment as the optimal solution
 //  6) Seems like testing all possible combinations or treating this as a graph problem is way over-engineering for this problem
+//  7) Ran into some trouble printing the char array with null-terminator chars. For some reason this always takes me a minute to iron out
+
 
 #include <iostream>
 #include <vector>
