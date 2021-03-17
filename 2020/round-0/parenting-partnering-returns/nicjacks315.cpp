@@ -1,3 +1,11 @@
+//Notes:
+//  1) Should work for test case #2 with greedy activity assignment, but I didn't time this one
+//  2) Could cut back on memory usage by slimming down the struct vectors
+//  3) Realistically only need to track the end times of events so we know when people are busy until
+//  4) Taking some notes from other contestants - defining some of the std::vector methods as short hand symbols makes typing go alot faster
+//  5) Without looking at the analysis, I arrived at pre-sorting and greedy assignment as the optimal solution
+//  6) Seems like testing all possible combinations or treating this as a graph problem is way over-engineering for this problem
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -51,7 +59,7 @@ void solve() {
             return;
         }
     }
-    out[n+1]='\0';
+    out[n]='\0';
     cout<<out<<'\n';
 }
 
