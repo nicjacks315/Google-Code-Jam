@@ -8,7 +8,6 @@
 //  7) Ran into some trouble printing the char array with null-terminator chars. For some reason this always takes me a minute to iron out
 //  8) Almost blew it with the pre-emptive sorting! Results expect activites to be assigned based in the order of their input, not chronologically! Tracked activity number with x; another advantage of using the heavier struct instead of int vectors. This error was only realized when running the final sample input.
 
-
 #include <iostream>
 #include <vector>
 #include <algorithm>
