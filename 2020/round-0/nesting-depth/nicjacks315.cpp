@@ -1,4 +1,5 @@
 //Notes:
+//  0) Works for both test cases
 //  1) I've done this before in writing my own XML parser:
 //  2) Take the difference in nesting depth and stick in appropriate number of open/close parentheses
 //  3) Only works for constructing your own nested data structure, doesnt work for reading as malformed structures break the algorithm
