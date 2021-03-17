@@ -5,6 +5,8 @@
 //  3) Only works for constructing your own nested data structure, doesnt work for reading as malformed structures break the algorithm
 //  4) Could be cleaner by using c-style strings, but in the name of time I used std::string
 //  5) This whole thing can written in about 3 lines in python
+//  6) Other contestants favored while loops and directly appending parentheses chars, but more or less did the same thing
+//  7) Other contestants eliminated the calculation of dif with the while loops
 
 #include <iostream>
 #include <cstring>
